@@ -1,4 +1,5 @@
-from flask import flask 
+from flask import flask, render_template  
+# from camera import video 
 
 app = flask(__name__) 
 
@@ -6,4 +7,4 @@ app = flask(__name__)
 def index(): 
   return render_template('index.html') 
 
-app.run(debug=False)  
+app.run(debug=True)   
